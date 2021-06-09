@@ -1,0 +1,48 @@
+*, *::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align:center;
+}
+.app {
+    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    padding: 13rem;
+}
+p {
+    font-size:17px;
+    font-weight:normal;
+    margin:10px;
+
+}
+
+.fetch-app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#fetch-btn {
+    cursor: pointer;
+    background-color: darkgray;
+    width: 10rem;
+    height: 4rem;
+    margin-bottom: 2rem;
+}
+.result-items {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.image  {
+    width: 40%;
+    height: 50%;
+}
+@media screen and (min-width: 800px) and (max-width: 1450px){
+    .result-items {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
