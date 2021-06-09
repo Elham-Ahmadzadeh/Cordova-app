@@ -5,3 +5,4 @@
 # cordova platform add browser
 # cordova run browser
 # cordova run ios
+Cordova dialogue plugin + fetch
